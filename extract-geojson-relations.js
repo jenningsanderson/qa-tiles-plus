@@ -13,6 +13,8 @@ var ways  = []
 var wayLocations = {}
 var relations = {} //Will just store this in memory after the first pass
 
+var errors = 0
+
 relHandler.on('relation', function(relation) {
   count++;
   if (count%100==0){process.stderr.write("\r"+count)}
@@ -156,7 +158,9 @@ geomHandler.on('done', function() {
         "geometry":geom,
         "properties":props}))
     }catch(e){
-      console.warn(e)
+//       console.warn(JSON.stringify(thisRel,null,2))
+//       console.warn(e)
+        errors++;
     }
   })
 
@@ -220,3 +224,5 @@ reader = new osmium.Reader(input_filename, {node: true, way: false, relation:fal
 osmium.apply(reader, geomHandler);
 geomHandler.end();
 reader.close();
+
+console.warn("Errors: "+errors+ " - most likely relations that only reference other relations...")

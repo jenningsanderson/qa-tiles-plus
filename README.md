@@ -12,15 +12,15 @@ Each script is numbered to run in order. First, wget the latest planet file and 
     $ wget https://planet.openstreetmap.org/pbf/planet-latest.osm.pbf
     $ wget https://s3.amazonaws.com/mapbox/osm-qa-tiles-production/latest.planet.mbtiles.gz
     
-Then, filter the planet file for relevant restrictions (~ 10 minutes )
+Then, filter the planet file for relevant restrictions (~ 10 minutes ):
     
     $ ./step-1-osmium-tags-filter.sh  
     
-Now extract those into GeoJSON:
+Now run the `extract` script to turn turn-restrictions into GeoJSON (~ 1 minute ): 
     
-    $ ./step-2 <TODO>
+    $ ./step-2-convert-geometries.sh
     
-Run tippecanoe to create the turn restrictions mbtiles file.
+Run tippecanoe to create the turn restrictions mbtiles file ( ~ 2 minutes ):
 
     $ ./step-3-tile.sh
     
