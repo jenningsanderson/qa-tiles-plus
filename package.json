@@ -1,0 +1,15 @@
+{
+  "name": "qa-tiles-plus",
+  "version": "1.0.0",
+  "description": "tools to enhance current osm-qa-tiles with some basic relations",
+  "main": "extract-geojson-relations.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "osmium": "^0.5.7"
+  }
+}
