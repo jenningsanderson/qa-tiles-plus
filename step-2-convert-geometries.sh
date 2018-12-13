@@ -1,0 +1,1 @@
+time node extract-geojson-relations.js restrictions.osm.pbf > turn-restrictions.geojsonseq
