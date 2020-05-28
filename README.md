@@ -1,13 +1,11 @@
 # OSM-QA-Tiles+
 
-Playing in this repo before moving to osmlab...?
-
 Some scripts to automate the extraction of turn restrictions (and more?) from the planet pbf file and then join with the latest osm-qa-tiles.
 
 Originally from this gist: https://gist.github.com/jenningsanderson/b04ac2cc68a2cf79a4c4cb2c1b16c96d
 
 ### Running
-Each script is numbered to run in order. First, wget the latest planet file and the osm-qa-tiles:
+Each script is numbered to run in order. First, `wget` the latest planet file and the osm-qa-tiles:
 
     $ wget https://planet.openstreetmap.org/pbf/planet-latest.osm.pbf
     $ wget https://s3.amazonaws.com/mapbox/osm-qa-tiles-production/latest.planet.mbtiles.gz
