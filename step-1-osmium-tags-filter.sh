@@ -1,1 +1,1 @@
-~/osm-wayback/mason_packages/.link/bin/osmium tags-filter --overwrite --verbose planet-latest.osm.pbf r/type=restriction -o restrictions.osm.pbf
+~/osm-wayback/mason_packages/.link/bin/osmium tags-filter --overwrite --verbose $1 r/type=restriction -o restrictions.osm.pbf
