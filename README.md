@@ -7,7 +7,7 @@ Add representations of turn-restrictions to [osm-qa-tiles](//github.com/osmlab/o
 The `RUN.sh` script will do everything that is needed.
 
 ### Running Individually: 
-Each script is numbered to run in order. First, `wget` the latest `planet.osm.pbf` file with step-0: 
+Each script is numbered to run in order:
     
     $ ./step-0-install-dependencies-and-download-planet.sh 
 
