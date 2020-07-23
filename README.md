@@ -2,8 +2,6 @@
 
 Add representations of turn-restrictions to [osm-qa-tiles](//github.com/osmlab/osm-qa-tiles). 
 
-Some scripts to automate the extraction of turn restrictions (and more?) from the planet pbf file and then join with the latest osm-qa-tiles.
-
 ### Running 
 
 The `RUN.sh` script will do everything that is needed.
