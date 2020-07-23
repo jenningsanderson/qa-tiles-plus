@@ -9,7 +9,7 @@ The `RUN.sh` script will do everything that is needed.
 ### Running Individually: 
 Each script is numbered to run in order. First, `wget` the latest `planet.osm.pbf` file with step-0: 
     
-    $ ./step-0-download-planet.sh 
+    $ ./step-0-install-dependencies-and-download-planet.sh 
 
 Then, filter the planet file for relevant restrictions (~ 10 minutes ):
     
@@ -31,7 +31,7 @@ Finally, run tile-join to join the turn restriction tiles with osm-qa-tiles, thi
     
     $ ./step-5-tile-join.sh <latest planet.mbtiles>
     
-Ultimately, the file e`osm-qa-with-tr.mbtiles` is created. This is easily fed into tile-reeduce for further analysis.
+Ultimately, the file `osm-qa-with-tr.mbtiles` is created. This is easily fed into tile-reeduce for further analysis.
 
 
 ### Acknowledgements
