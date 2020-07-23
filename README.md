@@ -27,7 +27,7 @@ Run tippecanoe to create the turn restrictions mbtiles file ( ~ 2 minutes ):
     
 Now get the latest osm-qa-tiles
 
-    $ ./step-4-obtain-qa-tiles
+    $ ./step-4-download-qa-tiles.sh
     
 Finally, run tile-join to join the turn restriction tiles with osm-qa-tiles, this can take some time.
     
