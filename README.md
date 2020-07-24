@@ -31,7 +31,7 @@ Finally, run tile-join to join the turn restriction tiles with osm-qa-tiles, thi
     
     $ ./step-5-tile-join.sh <latest planet.mbtiles>
     
-Ultimately, the file `osm-qa-with-tr.mbtiles` is created. This is easily fed into tile-reeduce for further analysis.
+Ultimately, the file `osm-qa-with-tr.mbtiles` is created. This is easily fed into tile-reduce for further analysis.
 
 
 ### Acknowledgements
