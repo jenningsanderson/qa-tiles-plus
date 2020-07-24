@@ -10,6 +10,6 @@ rm planet-latest.osm.pbf
 
 ./step-4-download-qa-tiles.sh
 
-./step-5-tile-join.sh planet-latest.mbtiles
+./step-5-tile-join.sh latest.planet.mbtiles
 
-rm planet-latest.mbtiles
+rm latest.planet.mbtiles
