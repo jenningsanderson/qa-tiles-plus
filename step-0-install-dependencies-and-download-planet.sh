@@ -13,4 +13,4 @@ mason/mason install osmium-tool 1.11.0
 mason/mason link osmium-tool 1.11.0
 
 echo "Downloading planet-latest.osm.pbf from a US mirror"
-wget https://ftpmirror.your.org/pub/openstreetmap/pbf/planet-latest.osm.pbf
+curl https://ftpmirror.your.org/pub/openstreetmap/pbf/planet-latest.osm.pbf -O --retry 999 --retry-max-time 0 -C - 
